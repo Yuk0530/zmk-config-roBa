@@ -49,6 +49,18 @@
             label = "TO_LAYER_0";
         };
     };
+
+
+    behaviors {
+        lt_to_layer_0: lt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&to_layer_0>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
 //combosやmacrosと同じ階層に以下のbihaviorsを追記
 //スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
 
@@ -62,17 +74,6 @@
         };
 
 // 設定したいレイヤーに sensor-bindings = <&encoder_msc_down_up>; を追記
-
-    behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";

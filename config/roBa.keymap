@@ -145,10 +145,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &kp RC(T)  &kp RS(RC(TAB))  &kp RS(RA(TAB))  &kp RC(TAB)  &kp RC(RS(T))
-&trans  &trans  &trans  &trans  &trans  &trans      &kp RG(E)         &kp RC(W)  &mkp MB4         &mkp MB3         &mkp MB5     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp RG(NUMBER_1)  &kp RC(E)  &mkp MB1         &mkp MB2         &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans            &trans                                                    &kp RA(F4)
+&trans  &trans  &trans  &trans  &trans                                &kp RC(T)  &kp RS(RC(TAB))  &kp RG(TAB)  &kp RC(TAB)  &kp RC(RS(T))
+&trans  &trans  &trans  &trans  &trans  &trans      &kp RG(E)         &kp RC(W)  &mkp MB4         &mkp MB3     &mkp MB5     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp RG(NUMBER_1)  &kp RC(E)  &mkp MB1         &mkp MB2     &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans            &trans                                                &kp RA(F4)
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;

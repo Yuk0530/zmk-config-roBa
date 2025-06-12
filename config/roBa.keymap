@@ -107,10 +107,10 @@
 
         ARROW {
             bindings = <
-&kp HOME  &kp PAGE_UP    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW      &kp LG(LC(RIGHT_ARROW))                              &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW        &kp LG(LC(RIGHT_ARROW))  &kp HOME             &kp PG_UP
-&kp END   &kp PAGE_DOWN  &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &trans              &trans  &kp LEFT_ARROW          &kp DOWN_ARROW      &kp RIGHT_ARROW          &kp END              &kp PAGE_DOWN
-&trans    &trans         &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)      &kp LEFT_SHIFT      &trans  &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)         &kp LG(RIGHT_ARROW)  &trans
-&trans    &trans         &kp LG(DOWN_ARROW)      &trans            &trans                   &trans              &trans  &trans                                                                                    &trans
+&kp HOME  &kp PAGE_UP    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW      &kp LG(LC(RIGHT_ARROW))                                     &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW        &kp LG(LC(RIGHT_ARROW))  &kp HOME             &trans
+&kp END   &kp PAGE_DOWN  &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &trans              &kp PG_UP      &kp LEFT_ARROW          &kp DOWN_ARROW      &kp RIGHT_ARROW          &kp END              &trans
+&trans    &trans         &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)      &kp LEFT_SHIFT      &kp PAGE_DOWN  &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)         &kp LG(RIGHT_ARROW)  &trans
+&trans    &trans         &kp LG(DOWN_ARROW)      &trans            &trans                   &trans              &trans         &trans                                                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;

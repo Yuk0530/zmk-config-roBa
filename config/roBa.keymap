@@ -76,10 +76,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                                     &kp Y        &kp U  &lt 5 I    &kp O       &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G                   &mkp MCLK                          &kp EQUAL      &kp H        &kp J  &kp K      &kp L       &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B                   &kp TAB                            &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp PERIOD  &lt 5 SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                                &kp DEL
+&kp Q      &kp W         &kp E         &kp R                        &kp T                                                                     &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A      &kp S         &kp D         &kp F                        &kp G                   &mkp MCLK                          &kp EQUAL      &kp H        &kp J  &kp K      &kp L       &kp MINUS
+&kp Z      &kp X         &kp C         &kp V                        &kp B                   &kp LEFT_SHIFT                     &mt TAB TILDE  &kp N        &kp M  &kp COMMA  &kp PERIOD  &lt 5 SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                                &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -96,10 +96,10 @@
 
         NUM {
             bindings = <
-&kp MINUS          &kp N7        &kp N8        &kp N9        &kp PLUS                                  &trans   &kp F7  &kp F8  &kp F9  &kp F10
-&kp SLASH          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(N0))      &trans  &trans   &kp F4  &kp F5  &kp F6  &kp F11
-&mt LEFT_SHIFT N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL           &trans  &kp ESC  &kp F1  &kp F2  &kp F3  &kp F12
-&trans             &trans        &trans        &trans        &trans        &trans              &trans  &trans                           &kp F13
+&kp MINUS  &kp N7        &kp N8        &kp N9        &kp PLUS                                  &trans   &kp F7  &kp F8  &kp F9  &kp F10
+&kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(N0))      &trans  &trans   &kp F4  &kp F5  &kp F6  &kp F11
+&kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL           &trans  &kp ESC  &kp F1  &kp F2  &kp F3  &kp F12
+&trans     &trans        &trans        &trans        &trans        &trans              &trans  &trans                           &kp F13
             >;
         };
 

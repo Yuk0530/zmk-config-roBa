@@ -82,7 +82,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                               &kp DEL
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_down_up>, <&encoder_msc_down_up>;
         };
 
         FUNCTION {
@@ -145,10 +145,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &kp RC(T)  &kp RS(RC(TAB))  &kp RG(TAB)  &kp RC(TAB)  &kp RC(RS(T))
-&trans  &trans  &trans  &trans  &trans  &trans      &kp RG(E)         &kp RC(W)  &mkp MB4         &mkp MB3     &mkp MB5     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp RG(NUMBER_1)  &kp RC(E)  &mkp MB1         &mkp MB2     &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans            &trans                                                &kp RA(F4)
+&kp Q   &kp W   &kp E   &trans  &trans                                        &kp RC(T)  &kp RS(RC(TAB))  &kp RG(TAB)  &kp RC(TAB)  &kp RC(RS(T))
+&kp A   &kp S   &kp D   &trans  &trans  &trans              &kp RG(E)         &kp RC(W)  &mkp MB4         &mkp MB3     &mkp MB5     &trans
+&trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT      &kp RG(NUMBER_1)  &kp RC(E)  &mkp MB1         &mkp MB2     &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans            &trans                                                &kp RA(F4)
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;

@@ -90,7 +90,7 @@
 &trans  &trans     &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT            &kp INT_YEN
 &trans  &kp TILDE  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans              &trans   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON      &kp DOUBLE_QUOTES  &kp NON_US_BACKSLASH
 &trans  &trans     &kp EXCLAMATION  &kp AT        &kp HASH              &kp LEFT_SHIFT      &kp TAB  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN  &kp GREATER_THAN   &kp PIPE
-&trans  &trans     &trans           &trans        &trans                &trans              &trans   &trans                                                                         &kp F12
+&trans  &trans     &trans           &trans        &trans                &trans              &trans   &trans                                                                         &kp LG(H)
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
@@ -145,10 +145,10 @@
 
         layer_7 {
             bindings = <
-&kp Q   &kp W   &kp E   &trans  &trans                                        &kp RC(T)  &kp RS(RC(TAB))     &kp RG(TAB)  &kp RC(TAB)          &kp RC(RS(T))
-&kp A   &kp S   &kp D   &trans  &trans  &trans              &kp RG(E)         &kp RC(W)  &kp LA(LEFT_ARROW)  &mkp MB3     &kp LA(RIGHT_ARROW)  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT      &kp RG(NUMBER_1)  &kp RC(E)  &mkp MB1            &mkp MB2     &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans            &trans                                                           &kp RA(F4)
+&kp Q   &kp W   &kp E   &trans  &trans                                                   &kp RC(T)              &kp RS(RC(TAB))     &kp RG(TAB)  &kp RC(TAB)          &kp RC(RS(T))
+&kp A   &kp S   &kp D   &trans  &trans         &trans              &kp RG(E)             &kp RC(W)              &kp LA(LEFT_ARROW)  &mkp MB3     &kp LA(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans         &kp LEFT_SHIFT      &kp RG(NUMBER_1)      &kp RC(E)              &mkp MB1            &mkp MB2     &trans               &trans
+&trans  &trans  &trans  &trans  &kp LG(SPACE)  &trans              &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                        &kp RA(F4)
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;

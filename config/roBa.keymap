@@ -99,7 +99,7 @@
         NUM {
             bindings = <
 &kp MINUS         &kp PLUS      &kp N7        &kp N8          &kp N9                                         &kp F7  &kp F8  &kp F9  &kp F10  &kp C_VOLUME_UP
-&kp SLASH         &kp ASTRK     &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp LC(LA(N0))        &kp EQUAL  &kp F4  &kp F5  &kp F6  &kp F11  &kp C_VOL_DN
+&kp SLASH         &kp ASTRK     &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp LEFT_SHIFT        &kp EQUAL  &kp F4  &kp F5  &kp F6  &kp F11  &kp C_VOL_DN
 &kp EQUAL         &kp N0        &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp DOT               &kp ESC    &kp F1  &kp F2  &kp F3  &kp F12  &kp C_MUTE
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp INT_HENKAN  &kp SPACE     &kp INT_MUHENKAN      &trans     &trans                           &kp PRINTSCREEN
             >;
@@ -147,8 +147,8 @@
 
         layer_7 {
             bindings = <
-&kp Q   &kp W   &kp E   &trans  &trans                                                   &kp RC(T)              &kp RS(RC(TAB))     &kp RG(TAB)  &kp RC(TAB)          &kp RC(RS(T))
-&kp A   &kp S   &kp D   &trans  &trans         &trans              &kp RG(E)             &kp RC(W)              &kp LA(LEFT_ARROW)  &mkp MB3     &kp LA(RIGHT_ARROW)  &trans
+&kp Q   &kp W   &kp E   &trans  &trans                                                   &kp RC(T)              &kp LA(LEFT_ARROW)  &mkp MB3     &kp RA(RIGHT_ARROW)  &kp RC(RS(T))
+&kp A   &kp S   &kp D   &trans  &trans         &trans              &kp RG(E)             &kp RC(W)              &kp LS(LC(TAB))     &kp RG(TAB)  &kp RC(TAB)          &trans
 &trans  &trans  &trans  &trans  &trans         &kp LEFT_SHIFT      &kp RG(NUMBER_1)      &kp RC(E)              &mkp MB1            &mkp MB2     &trans               &trans
 &trans  &trans  &trans  &trans  &kp LG(SPACE)  &trans              &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                        &kp RA(F4)
             >;

@@ -82,7 +82,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                               &kp DEL
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>, <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
@@ -103,14 +103,16 @@
 &kp EQUAL         &kp N0        &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp DOT               &kp ESC    &kp F1  &kp F2  &kp F3  &kp F12  &kp C_MUTE
 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp INT_HENKAN  &kp SPACE     &kp INT_MUHENKAN      &trans     &trans                           &kp PRINTSCREEN
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
             bindings = <
-&kp HOME  &kp PAGE_UP    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW      &kp LG(LC(RIGHT_ARROW))                                     &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW        &kp LG(LC(RIGHT_ARROW))  &kp HOME             &trans
-&kp END   &kp PAGE_DOWN  &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &kp LEFT_SHIFT      &kp PG_UP      &kp LEFT_ARROW          &kp DOWN_ARROW      &kp RIGHT_ARROW          &kp END              &trans
-&trans    &trans         &kp LG(LEFT_ARROW)      &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)      &kp LEFT_SHIFT      &kp PAGE_DOWN  &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)         &kp LG(RIGHT_ARROW)  &trans
-&trans    &trans         &kp LG(DOWN_ARROW)      &trans            &trans                   &trans              &trans         &trans                                                                                    &trans
+&trans            &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)      &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)                                         &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)      &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)      &trans
+&kp PAGE_UP       &kp HOME            &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW      &kp LG(LC(RIGHT_ARROW))  &kp LEFT_SHIFT      &kp PG_UP      &kp HOME            &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW      &kp LC(LG(RIGHT_ARROW))  &trans
+&kp PAGE_DOWN     &kp END             &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &kp LEFT_SHIFT      &kp PAGE_DOWN  &kp END             &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &trans
+&kp LEFT_CONTROL  &kp LEFT_WIN        &kp LEFT_ALT            &trans            &trans                   &trans              &trans         &trans                                                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;

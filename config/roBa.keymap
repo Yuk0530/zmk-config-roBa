@@ -156,10 +156,10 @@
 
         layer_7 {
             bindings = <
-&kp Q      &kp W      &kp E      &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)                                            &kp RC(T)              &kp LA(LEFT_ARROW)  &mkp MB3     &kp RA(RIGHT_ARROW)  &kp RC(RS(T))
-&kp A      &kp S      &kp D      &kp LC(LS(TAB))     &kp LC(TAB)          &trans              &kp RG(E)             &kp RC(W)              &kp LS(LC(TAB))     &kp RG(TAB)  &kp RC(TAB)          &trans
-&kp LS(O)  &kp LS(P)  &kp LS(H)  &kp LS(S)           &trans               &kp LEFT_SHIFT      &kp RG(NUMBER_1)      &kp RC(E)              &mkp MB1            &mkp MB2     &trans               &trans
-&trans     &trans     &trans     &trans              &kp ENTER            &trans              &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                        &kp RA(F4)
+&kp Q      &kp W      &kp E      &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))                                            &kp RC(T)              &kp LA(LEFT_ARROW)  &mkp MB3     &kp RA(RIGHT_ARROW)  &kp RC(RS(T))
+&kp A      &kp S      &kp D      &kp LC(LS(TAB))         &kp LC(TAB)              &trans              &kp RG(E)             &kp RC(W)              &kp LS(LC(TAB))     &kp RG(TAB)  &kp RC(TAB)          &trans
+&kp LS(O)  &kp LS(P)  &kp LS(H)  &kp LS(S)               &trans                   &kp LEFT_SHIFT      &kp RG(NUMBER_1)      &kp RC(E)              &mkp MB1            &mkp MB2     &trans               &trans
+&trans     &trans     &trans     &trans                  &kp ENTER                &trans              &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                        &kp RA(F4)
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;

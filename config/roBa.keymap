@@ -109,7 +109,7 @@
             bindings = <
 &kp C_VOLUME_UP    &kp F10       &kp F7        &kp F8          &kp F9                                         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp MINUS
 &kp C_VOLUME_DOWN  &kp F11       &kp F4        &kp F5          &kp F6     &kp LEFT_SHIFT        &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp SLASH
-&kp K_MUTE         &kp F12       &kp F1        &kp F2          &kp F3     &kp ESC               &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL
+&kp C_MUTE         &kp F12       &kp F1        &kp F2          &kp F3     &kp ESC               &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL
 &kp LEFT_CONTROL   &kp LEFT_WIN  &kp LEFT_ALT  &kp INT_HENKAN  &kp SPACE  &kp INT_MUHENKAN      &trans        &trans                                                  &kp PRINTSCREEN
             >;
 

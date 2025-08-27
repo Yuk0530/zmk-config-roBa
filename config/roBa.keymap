@@ -170,10 +170,10 @@
 
         layer_7 {
             bindings = <
-&kp Q           &kp W           &kp E            &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))                                            &kp RC(E)              &kp LA(LEFT_ARROW)  &mkp MB3     &kp RA(RIGHT_ARROW)  &kp RC(RS(T))
-&kp A           &kp S           &kp D            &kp LC(LS(TAB))         &kp LC(TAB)              &trans              &kp LG(E)             &kp RC(T)              &kp LS(LC(TAB))     &kp LG(TAB)  &kp RC(TAB)          &trans
-&kp UP_ARROW    &pdf_output     &back_to_home    &kp LS(S)               &kp LG(TAB)              &kp LEFT_SHIFT      &kp LG(NUMBER_1)      &kp RC(W)              &mkp MB1            &mkp MB2     &trans               &trans
-&kp DOWN_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp LC(W)               &kp ENTER                &kp LC(T)           &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                        &kp RA(F4)
+&kp Q      &kp W           &kp E            &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))                                            &kp RC(E)              &kp LA(LEFT_ARROW)  &mkp MB3     &kp RA(RIGHT_ARROW)  &kp RC(RS(T))
+&kp A      &kp S           &kp D            &kp LC(LS(TAB))         &kp LC(TAB)              &trans              &kp LG(E)             &kp RC(T)              &kp LS(LC(TAB))     &kp LG(TAB)  &kp RC(TAB)          &trans
+&kp PG_UP  &pdf_output     &back_to_home    &kp LS(S)               &kp LG(TAB)              &kp LEFT_SHIFT      &kp LG(NUMBER_1)      &kp RC(W)              &mkp MB1            &mkp MB2     &trans               &trans
+&kp PG_DN  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp LC(W)               &kp ENTER                &kp LC(T)           &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)                                                        &kp RA(F4)
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;

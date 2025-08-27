@@ -60,8 +60,7 @@
         back_to_home: back_to_home {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(H)>, <&macro_wait_time 100>, <&kp ENTER>;
-
+            bindings = <&kp LS(H) &kp ENTER>;
             label = "BACK_TO_HOME";
         };
 

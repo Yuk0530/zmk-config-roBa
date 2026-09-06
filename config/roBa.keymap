@@ -126,10 +126,10 @@
 
         ARROW {
             bindings = <
-&kp PRINTSCREEN  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)                         &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(LS(T))
-&kp HOME         &kp PG_UP           &kp LC(LS(TAB))     &kp UP_ARROW      &kp LC(TAB)          &trans       &kp HOME  &kp PG_UP           &kp LC(LS(TAB))     &kp UP_ARROW      &kp LC(TAB)          &trans
-&kp END          &kp PAGE_DOWN       &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp ESC      &kp END   &kp PG_DN           &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &trans
-&trans           &trans              &trans              &trans            &trans               &trans       &trans    &trans                                                                         &trans
+&kp PRINTSCREEN  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)                         &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)      &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)      &kp LC(LS(T))
+&kp HOME         &kp PG_UP           &kp LC(LS(TAB))     &kp UP_ARROW      &kp LC(TAB)          &trans       &kp HOME  &kp PG_UP           &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW      &kp LC(LG(RIGHT_ARROW))  &trans
+&kp END          &kp PAGE_DOWN       &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp ESC      &kp END   &kp PG_DN           &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &trans
+&trans           &trans              &trans              &trans            &trans               &trans       &trans    &trans                                                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
@@ -137,10 +137,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &kp LC(L)  &kp LA(LEFT_ARROW)      &mkp MB3     &kp LA(RIGHT_ARROW)      &kp LC(LS(T))
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(E)         &kp LC(T)  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LC(LG(RIGHT_ARROW))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(NUMBER_1)  &kp LC(W)  &mkp MB1                &mkp MB2     &trans                   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans            &trans                                                                   &kp LA(F4)
+&trans  &trans  &trans  &trans  &trans                                &kp LC(L)  &kp LA(LEFT_ARROW)  &mkp MB3     &kp LA(RIGHT_ARROW)  &kp LC(LS(T))
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(E)         &kp LC(T)  &kp LC(LS(TAB))     &kp LG(TAB)  &kp LC(TAB)          &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LG(NUMBER_1)  &kp LC(W)  &mkp MB1            &mkp MB2     &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans            &trans                                                           &kp LA(F4)
             >;
         };
 

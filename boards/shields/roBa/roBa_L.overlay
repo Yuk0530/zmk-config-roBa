@@ -15,6 +15,4 @@
     status = "okay";
 };
 
-&sensors {
-    triggers-per-rotation = <12>;
-};
+

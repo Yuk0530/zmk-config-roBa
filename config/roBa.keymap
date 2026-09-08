@@ -5,7 +5,7 @@
 
 // #includeのあとのあたりにスクロール量を変更
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
     flavor = "balanced";
@@ -88,7 +88,7 @@
 
             // 追加: スクロールのタップ時間を設定 (20ms)
 
-            tap-ms = <100>;
+            tap-ms = <10>;
         };
     };
 

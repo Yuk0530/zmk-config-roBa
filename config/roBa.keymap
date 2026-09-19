@@ -43,11 +43,6 @@
             bindings = <&kp TAB>;
             key-positions = <12 13>;
         };
-
-        layer_7_and_alt {
-            bindings = <&layer_7_and_alt>;
-            key-positions = <33 19>;
-        };
     };
 
     macros {
@@ -61,29 +56,40 @@
         shut_down: shut_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(X) &kp U &kp U>;
+            bindings =
+                <&kp LG(X)>,
+                <&macro_tap_time 10>,
+                <&kp U>,
+                <&macro_tap_time 10>,
+                <&kp U>;
+
             label = "SHUT_DOWN";
         };
 
         sleep: sleep {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(X) &kp U &kp S>;
+            bindings =
+                <&kp LG(X)>,
+                <&macro_tap_time 10>,
+                <&kp U>,
+                <&macro_tap_time 10>,
+                <&kp S>;
+
             label = "SLEEP";
         };
 
         pag_min: pag_min {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp SPACE &kp N>;
-            label = "PAG_MIN";
-        };
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 10>,
+                <&kp SPACE>,
+                <&macro_wait_time 10>,
+                <&kp N>;
 
-        layer_7_and_alt: layer_7_and_alt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 7 &kp LEFT_ALT>;
-            label = "LAYER_7_AND_ALT";
+            label = "PAG_MIN";
         };
     };
 
@@ -117,7 +123,7 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &kp I      &kp O         &kp P
-&kp A      &kp S         &kp D         &kp F                        &kp G        &mkp MB3                           &kp EQUAL      &kp H        &kp J  &kp K      &kp L         &lt 3 MINUS
+&kp A      &kp S         &kp D         &kp F                        &kp G        &lt 7 LG(D)                        &kp EQUAL      &kp H        &kp J  &kp K      &kp L         &lt 3 MINUS
 &kp Z      &kp X         &kp C         &kp V                        &kp B        &kp LEFT_SHIFT                     &kp GRAVE      &kp N        &kp M  &kp COMMA  &lt 5 PERIOD  &lt 4 SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                                  &kp DEL
             >;
@@ -187,11 +193,13 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans       &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans       &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LS(TAB)  &trans  &kp TAB  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LEFT_ALT      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
         };
     };
 };

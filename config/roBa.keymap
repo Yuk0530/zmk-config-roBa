@@ -30,6 +30,10 @@
     // };
 };
 
+&sensors {
+    triggers-per-rotation = <6>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";

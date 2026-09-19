@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
+    - name: kloir-z
+      url-base: https://github.com/kloir-z
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,10 +14,6 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
       revision: main
-  remotes:
-    - name: kloir-z
-      url-base: https://github.com/kloir-z
-  projects:
     - name: zmk-pmw3610-driver
       remote: kloir-z
       revision: scroll-acceleration-feature

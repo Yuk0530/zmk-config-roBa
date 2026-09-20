@@ -111,6 +111,32 @@
 
             label = "PAG_MIN";
         };
+
+        win_snap_right: win_snap_right {
+            compatible = "zmk,behavior-macro";
+            label = "WIN_SNAP_RIGHT";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+
+        win_snap_left: win_snap_left {
+            compatible = "zmk,behavior-macro";
+            label = "WIN_SNAP_LEFT";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LGUI>
+                ;
+        };
     };
 
     behaviors {

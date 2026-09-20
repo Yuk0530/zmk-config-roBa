@@ -118,11 +118,13 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp RIGHT>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LGUI>;
         };
 
         win_snap_left: win_snap_left {
@@ -131,11 +133,13 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp LEFT>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp LEFT>,
+                <&macro_release>,
+                <&kp LGUI>;
         };
     };
 
@@ -199,10 +203,10 @@
 
         ARROW {
             bindings = <
-&kp PRINTSCREEN  &kp LG(LEFT_ARROW)  &pag_min                &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)                             &kp LG(LEFT_ARROW)  &pag_min                &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)      &kp LC(LS(T))
-&kp HOME         &kp PG_UP           &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW      &kp LC(LG(RIGHT_ARROW))  &trans       &kp HOME  &kp PG_UP           &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW      &kp LC(LG(RIGHT_ARROW))  &trans
-&kp END          &kp PAGE_DOWN       &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &kp ESC      &kp END   &kp PG_DN           &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &trans
-&trans           &trans              &trans                  &trans            &trans                   &trans       &trans    &trans                                                                                 &trans
+&kp PRINTSCREEN  &win_snap_left  &pag_min                &kp LG(UP_ARROW)  &win_snap_right                                 &win_snap_left  &pag_min                &kp LG(UP_ARROW)  &win_snap_right          &kp LC(LS(T))
+&kp HOME         &kp PG_UP       &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW      &kp LC(LG(RIGHT_ARROW))  &trans       &kp HOME  &kp PG_UP       &kp LG(LC(LEFT_ARROW))  &kp UP_ARROW      &kp LC(LG(RIGHT_ARROW))  &trans
+&kp END          &kp PAGE_DOWN   &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &kp ESC      &kp END   &kp PG_DN       &kp LEFT_ARROW          &kp DOWN_ARROW    &kp RIGHT_ARROW          &trans
+&trans           &trans          &trans                  &trans            &trans                   &trans       &trans    &trans                                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;

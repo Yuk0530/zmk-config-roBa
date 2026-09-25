@@ -78,26 +78,20 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LG(X)>,
-                <&macro_tap_time 10>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 100>,
+                <&macro_tap>,
                 <&kp U>,
-                <&macro_tap_time 10>,
+                <&macro_wait_time 100>,
+                <&macro_tap>,
                 <&kp U>;
 
             label = "SHUT_DOWN";
-        };
-
-        sleep: sleep {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LG(X)>,
-                <&macro_tap_time 10>,
-                <&kp U>,
-                <&macro_tap_time 10>,
-                <&kp S>;
-
-            label = "SLEEP";
         };
 
         pag_min: pag_min {
@@ -160,6 +154,26 @@
                 <&kp C &kp A &kp L &kp C>,
                 <&macro_tap>,
                 <&kp RET>;
+        };
+
+        sleep: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 100>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_wait_time 100>,
+                <&macro_tap>,
+                <&kp S>;
+
+            label = "NEW_MACRO";
         };
     };
 
